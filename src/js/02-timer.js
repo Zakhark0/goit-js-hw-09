@@ -19,7 +19,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    now = new Date();
+    dateNow = new Date();
     if (selectedDates[0].getTime() < Date.now()) {
       alert('Виберіть майбутню дату');
       startBtnEl.disabled = true;
