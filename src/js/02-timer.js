@@ -49,7 +49,6 @@ const timer = {
       startBtnEl.disabled = true;
       dateNow = Date.now();
       const gap = date - dateNow;
-      console.log(this.convertMs(gap));
       if (gap <= 1) {
         clearInterval(this.timerId);
         startBtnEl.disabled = true;
